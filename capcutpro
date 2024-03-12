@@ -1,0 +1,61 @@
+"""
+CapCutPro APK Repository
+"""
+
+class CapCutProAPK:
+    def __init__(self, version, features, installation_guide, download_link):
+        self.version = version
+        self.features = features
+        self.installation_guide = installation_guide
+        self.download_link = download_link
+
+    def display_features(self):
+        print("Features of CapCutPro APK:")
+        for feature in self.features:
+            print("- " + feature)
+
+    def display_installation_guide(self):
+        print("Installation Guide for CapCutPro APK:")
+        print(self.installation_guide)
+
+    def display_download_link(self):
+        print("Download CapCutPro APK for iOS:")
+        print(self.download_link)
+
+
+def main():
+    # Define features of CapCutPro APK
+    features = [
+        "Advanced editing tools",
+        "Wide range of effects and filters",
+        "High-definition export options",
+        "Intuitive user interface",
+        "Social media integration",
+        "Royalty-free music library",
+        "Collaborative editing capabilities"
+    ]
+
+    # Define installation guide for CapCutPro APK
+    installation_guide = """
+    Step 1: Download the CapCutPro APK file from a trusted source.
+    Step 2: Enable installation from unknown sources in your device settings.
+    Step 3: Open the downloaded APK file and follow the on-screen instructions to install.
+    Step 4: Once installed, open the app and start editing your videos!
+    """
+
+    # Define download link for CapCutPro APK for iOS
+    download_link = "https://capcutproapk.pro/capcut-for-ios/"
+
+    # Create an instance of CapCutProAPK
+    capcut_pro_apk = CapCutProAPK(version="2.0.1", features=features, installation_guide=installation_guide, download_link=download_link)
+
+    # Display features, installation guide, and download link
+    capcut_pro_apk.display_features()
+    print("\n")
+    capcut_pro_apk.display_installation_guide()
+    print("\n")
+    capcut_pro_apk.display_download_link()
+
+
+if __name__ == "__main__":
+    main()
